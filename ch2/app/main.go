@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
-	a := popcount.PopCount(2345678)
+	var x uint64 = 1537
+	a := popcount.PopCount(x)
 	fmt.Println(a)
+
+	b := popcount.PopCountEx23(x)
+	fmt.Println(b)
 }
